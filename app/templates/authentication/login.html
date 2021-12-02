@@ -1,0 +1,25 @@
+{% from "_formhelpers.html" import render_field %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title></title>
+    <title>DIGITAL SACCO</title>
+    <body>
+      <h2 id="h2">DIGITAL SACCO</h2>
+
+      <form id="form" method="post">
+        {{ render_field(form.email) }}
+        <!--  -->
+        {{ render_field(form.password) }}
+        <!--  -->
+        {{ render_field(form.remember) }}
+
+        <button id="button">Login</button>
+      </form>
+    </body>
+  </head>
+</html>
